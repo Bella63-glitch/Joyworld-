@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyworld Training Institute | Hannah Njuguna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F9FAFB; color: #111827; scroll-behavior: smooth; overflow-x: hidden; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80');
+            background-size: cover; background-position: center;
+        }
+
+        .trust-card { transform: translateY(-50%); z-index: 20; }
+        
+        .course-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .course-card:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+
+        .image-container { width: 100%; height: 240px; overflow: hidden; background: #eee; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .course-card:hover .image-container img { transform: scale(1.1); }
+
+        .btn-red { 
+            background-color: #b91c1c; 
+            color: white; 
+            transition: 0.3s; 
+            text-align: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 700;
+            width: 100%;
+            display: inline-block;
+        }
+        .btn-red:hover { background-color: #991b1b; transform: scale(1.05); }
+        
+        .glass-nav { backdrop-filter: blur(10px); background: rgba(255,255,255,0.9); }
+    </style>
+</head>
+<body>
+
+    <nav class="glass-nav border-b py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 md:h-12" alt="Joyworld Logo">
+            <a href="tel:+254703312189" class="bg-[#b91c1c] text-white px-5 py-2 rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-red-800 transition-all">
+                <i class="fas fa-phone-alt text-xs"></i> <span class="hidden md:inline">Call:</span> +254 703 312 189
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero-bg pt-32 pb-48 px-6 text-center text-white">
+        <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+            <span class="bg-blue-600/30 border border-blue-400/30 text-blue-200 text-[10px] px-4 py-1.5 rounded-full uppercase font-black tracking-widest mb-6 inline-block">TVET Accredited Institute</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Empowering <span class="text-red-500">Professionals</span> for a Better Tomorrow</h1>
+            <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">Practical expertise to shape your future career at Joyworld Training Institute.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-red max-w-xs shadow-lg shadow-red-900/20">Enroll with us Today</button>
+                <button class="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition">Explore Courses</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="trust-card bg-white rounded-[2rem] shadow-2xl grid grid-cols-2 lg:grid-cols-4 p-8 gap-4 border border-gray-100" data-aos="zoom-in" data-aos-delay="200">
+            <div class="text-center px-2">
+                <i class="fas fa-university text-red-600 mb-2 text-xl"></i>
+                <p class="text-[9px] font-black text-gray-500 uppercase tracking-widest">Ministry of Education</p>
+            </div>
+            <div class="text-center px-2 border-l border-gray-100">
+                <i class="fas fa-shield-alt text-red-600 mb-2 text-xl"></i>
+                <p class="text-[9px] font-black text-gray-500 uppercase tracking-widest">TVETA Registered</p>
+            </div>
+            <div class="text-center px-2 lg:border-l border-gray-100">
+                <i class="fas fa-handshake text-red-600 mb-2 text-xl"></i>
+                <p class="text-[9px] font-black text-gray-500 uppercase tracking-widest">National Partners</p>
+            </div>
+            <div class="text-center px-2 border-l border-gray-100">
+                <i class="fas fa-award text-red-600 mb-2 text-xl"></i>
+                <p class="text-[9px] font-black text-gray-500 uppercase tracking-widest">10+ Years Excellence</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="pb-24 px-6" id="courses">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-red-600 font-black text-xs uppercase tracking-[0.3em] mb-3">Our Programs</p>
+                <h2 class="text-4xl font-extrabold text-gray-900">Explore Popular Courses</h2>
+                <div class="h-1.5 w-20 bg-red-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="image-container">
+                        <img src="https://i.postimg.cc/vTdrPtrD/IMG-20250419-WA0009.jpg" alt="Nursing">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">Nursing & Health Sciences</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Equipping future healthcare professionals with compassion and medical expertise.</p>
+                        <button class="btn-red text-sm">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="https://i.postimg.cc/jjg3km2N/IMG-20260403-195716.png" alt="IT">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">ICT & Digital Arts</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Master software engineering, networking, and graphic design in our high-tech labs.</p>
+                        <button class="btn-red text-sm">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="image-container">
+                        <img src="https://i.postimg.cc/Hk36VRQb/IMG-20260403-192510.png" alt="Business">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">Business & Management</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Equip yourself with the financial and leadership skills for the modern boardroom.</p>
+                        <button class="btn-red text-sm">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="image-container">
+                        <img src="https://i.postimg.cc/qMxL5SZH/IMG-20260403-192454.png" alt="Engineering">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">Technical & Engineering</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Hands-on plumbing, electrical, and mechanical training for the industrial workforce.</p>
+                        <button class="btn-red text-sm">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-5/12" data-aos="fade-right">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-red-100 rounded-[3.5rem] -z-10"></div>
+                    <img src="https://i.postimg.cc/MHL5cYSJ/IMG-20260325-WA0017.jpg" alt="Hannah Njuguna" class="rounded-[3rem] shadow-2xl w-full h-[600px] object-cover">
+                </div>
+            </div>
+            <div class="w-full md:w-7/12" data-aos="fade-left">
+                <p class="text-red-600 font-black text-xs uppercase tracking-[0.3em] mb-4">Leadership Spotlight</p>
+                <h2 class="text-4xl font-extrabold mb-8 text-gray-900">Empowering Lives Through Knowledge</h2>
+                <div class="text-gray-600 text-base leading-relaxed space-y-5">
+                    <p class="font-bold text-xl text-gray-900 italic border-l-4 border-red-600 pl-4 bg-gray-50 py-4">
+                        "My name is Hannah Njuguna, an education enthusiast, visionary leader, and the proud Founder and CEO of Joyworld Training Institute..."
+                    </p>
+                    <p>Established in December 2023, my journey is rooted deeply in the field of education—a path that has shaped my purpose, values, and commitment to transforming lives through knowledge.</p>
+                    <p>From an early stage, I developed a strong passion for learning. Over time, I recognized a <strong>gap between traditional education systems and the practical skills</strong> needed in today’s fast-changing world. This realization became the foundation of Joyworld.</p>
+                    <p>I envisioned a training center that not only educates but also inspires confidence, independence, and growth. My mission is to ensure Joyworld becomes a center of transformation where individuals from all walks of life can unlock their potential.</p>
+                    <p class="font-semibold text-gray-800">The journey has just begun, and I remain committed to building a legacy that empowers communities and shapes a brighter future for generations to come.</p>
+                    
+                    <div class="pt-6">
+                        <p class="font-extrabold text-gray-900 text-lg">Hannah Njuguna</p>
+                        <p class="text-red-600 font-bold text-sm uppercase tracking-widest">Founder & CEO, Joyworld</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto bg-gray-950 rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden" data-aos="zoom-in-up">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-red-600/20 rounded-full blur-3xl"></div>
+            
+            <h2 class="text-4xl md:text-5xl font-black mb-6 relative z-10">Ready to transform your career?</h2>
+            <p class="text-gray-400 mb-10 max-w-xl mx-auto relative z-10">Admissions are open for the upcoming semester. Secure your spot today and join our community of achievers.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+                <button class="btn-red px-12 py-5 max-w-xs mx-auto sm:mx-0 shadow-xl shadow-red-600/20">Apply Now</button>
+                <button class="bg-white/10 border border-white/10 px-12 py-5 rounded-2xl font-bold hover:bg-white/20 transition">Download Prospectus</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-gray-500 py-16 px-6 border-t border-gray-900 text-center">
+        <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 mx-auto mb-6 opacity-40 grayscale hover:opacity-100 transition-all cursor-pointer" alt="Logo">
+        <p class="text-[10px] font-black uppercase tracking-[0.4em]">© 2026 Joyworld Training Institute</p>
+        <div class="flex justify-center gap-6 mt-8 text-xl">
+            <a href="#" class="hover:text-red-600 transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-red-600 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-red-600 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+                  </html>
+  
