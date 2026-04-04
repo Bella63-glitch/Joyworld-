@@ -36,7 +36,7 @@
 
         .btn-red { 
             background-color: #b91c1c; 
-            color: white; 
+            color: white !important; 
             transition: 0.3s; 
             text-align: center;
             padding: 0.75rem 1.5rem;
@@ -54,10 +54,15 @@
 
     <nav class="glass-nav border-b py-4 px-6 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 md:h-12" alt="Joyworld Logo">
-            <a href="tel:+254703312189" class="bg-[#b91c1c] text-white px-5 py-2 rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-red-800 transition-all">
-                <i class="fas fa-phone-alt text-xs"></i> <span class="hidden md:inline">Call:</span> +254 703 312 189
+            <a href="index.html">
+                <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 md:h-12" alt="Joyworld Logo">
             </a>
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="hidden md:inline text-sm font-bold text-gray-700 hover:text-red-600 transition">Contact Us</a>
+                <a href="tel:+254703312189" class="bg-[#b91c1c] text-white px-5 py-2 rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-red-800 transition-all">
+                    <i class="fas fa-phone-alt text-xs"></i> <span class="hidden md:inline">Call:</span> +254 703 312 189
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -67,8 +72,8 @@
             <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Empowering <span class="text-red-500">Professionals</span> for a Better Tomorrow</h1>
             <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">Practical expertise to shape your future career at Joyworld Training Institute.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="btn-red max-w-xs shadow-lg shadow-red-900/20">Enroll with us Today</button>
-                <button class="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition">Explore Courses</button>
+                <a href="enrollment.html" class="btn-red max-w-xs shadow-lg shadow-red-900/20">Enroll with us Today</a>
+                <a href="course.html" class="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition inline-block">Explore Courses</a>
             </div>
         </div>
     </header>
@@ -110,7 +115,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">Nursing & Health Sciences</h3>
                         <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Equipping future healthcare professionals with compassion and medical expertise.</p>
-                        <button class="btn-red text-sm">Enroll Now</button>
+                        <a href="enrollment.html" class="btn-red text-sm">Enroll Now</a>
                     </div>
                 </div>
                 <div class="course-card" data-aos="fade-up" data-aos-delay="200">
@@ -120,7 +125,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">ICT & Digital Arts</h3>
                         <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Master software engineering, networking, and graphic design in our high-tech labs.</p>
-                        <button class="btn-red text-sm">Enroll Now</button>
+                        <a href="enrollment.html" class="btn-red text-sm">Enroll Now</a>
                     </div>
                 </div>
                 <div class="course-card" data-aos="fade-up" data-aos-delay="300">
@@ -130,7 +135,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">Business & Management</h3>
                         <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Equip yourself with the financial and leadership skills for the modern boardroom.</p>
-                        <button class="btn-red text-sm">Enroll Now</button>
+                        <a href="enrollment.html" class="btn-red text-sm">Enroll Now</a>
                     </div>
                 </div>
                 <div class="course-card" data-aos="fade-up" data-aos-delay="400">
@@ -140,7 +145,7 @@
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-lg font-extrabold mb-3 text-gray-900 leading-tight">Technical & Engineering</h3>
                         <p class="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">Hands-on plumbing, electrical, and mechanical training for the industrial workforce.</p>
-                        <button class="btn-red text-sm">Enroll Now</button>
+                        <a href="enrollment.html" class="btn-red text-sm">Enroll Now</a>
                     </div>
                 </div>
             </div>
@@ -183,19 +188,21 @@
             <h2 class="text-4xl md:text-5xl font-black mb-6 relative z-10">Ready to transform your career?</h2>
             <p class="text-gray-400 mb-10 max-w-xl mx-auto relative z-10">Admissions are open for the upcoming semester. Secure your spot today and join our community of achievers.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-                <button class="btn-red px-12 py-5 max-w-xs mx-auto sm:mx-0 shadow-xl shadow-red-600/20">Apply Now</button>
-                <button class="bg-white/10 border border-white/10 px-12 py-5 rounded-2xl font-bold hover:bg-white/20 transition">Download Prospectus</button>
+                <a href="enrollment.html" class="btn-red px-12 py-5 max-w-xs mx-auto sm:mx-0 shadow-xl shadow-red-600/20">Apply Now</a>
+                <a href="course.html" class="bg-white/10 border border-white/10 px-12 py-5 rounded-2xl font-bold hover:bg-white/20 transition inline-block">View Course Catalog</a>
             </div>
         </div>
     </section>
 
     <footer class="bg-gray-950 text-gray-500 py-16 px-6 border-t border-gray-900 text-center">
-        <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 mx-auto mb-6 opacity-40 grayscale hover:opacity-100 transition-all cursor-pointer" alt="Logo">
+        <a href="index.html">
+            <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 mx-auto mb-6 opacity-40 grayscale hover:opacity-100 transition-all cursor-pointer" alt="Logo">
+        </a>
         <p class="text-[10px] font-black uppercase tracking-[0.4em]">© 2026 Joyworld Training Institute</p>
         <div class="flex justify-center gap-6 mt-8 text-xl">
+            <a href="contact.html" class="hover:text-red-600 transition"><i class="fas fa-envelope"></i></a>
             <a href="#" class="hover:text-red-600 transition"><i class="fab fa-facebook"></i></a>
             <a href="#" class="hover:text-red-600 transition"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-red-600 transition"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
@@ -208,5 +215,5 @@
         });
     </script>
 </body>
-                  </html>
-  
+</html>
+
