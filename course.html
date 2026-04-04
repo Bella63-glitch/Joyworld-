@@ -21,7 +21,7 @@
         
         .text-joy-red { color: #b91c1c; }
         .bg-joy-red { background-color: #b91c1c; }
-        .bg-joy-dark { background-color: #111827; }
+        .bg-joy-dark { background-color: #111828; }
 
         .hero-red-bg {
             background: linear-gradient(135deg, #991b1b 0%, #b91c1c 100%);
@@ -63,6 +63,9 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(185, 28, 28, 0.1);
             transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .cosmetology-glass-card:hover {
             transform: translateY(-10px);
@@ -88,13 +91,6 @@
             box-shadow: 0 10px 20px rgba(185, 28, 28, 0.3);
         }
 
-        /* FAQ Styling */
-        .faq-item { border-bottom: 1px solid #e5e7eb; }
-        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .faq-item.active .faq-content { max-height: 200px; }
-        .faq-item.active .faq-icon { transform: rotate(180deg); }
-
-        /* Floating WhatsApp */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -110,14 +106,12 @@
             font-size: 30px;
             box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
             z-index: 100;
-            transition: transform 0.3s;
         }
-        .whatsapp-float:hover { transform: scale(1.1); }
     </style> 
  </head> 
  <body> 
 
-  <a href="https://wa.me/254703312189" class="whatsapp-float animate__animated animate__bounceInUp animate__delay-2s" target="_blank">
+  <a href="https://wa.me/254700813795" class="whatsapp-float animate__animated animate__bounceInUp" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -125,13 +119,13 @@
    <div class="container mx-auto flex justify-between items-center"> 
     <a href="#"><img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 md:h-12" alt="Joyworld Logo"></a>
     <div class="hidden lg:flex items-center gap-8 font-bold text-sm text-gray-700">
-        <a href="#" class="hover:text-joy-red transition">Home</a>
-        <a href="#cosmetology" class="hover:text-joy-red transition">Cosmetology</a>
         <a href="#health" class="hover:text-joy-red transition">Health Sciences</a>
-        <a href="#languages" class="hover:text-joy-red transition">Languages</a>
-        <a href="#faq" class="hover:text-joy-red transition">FAQs</a>
+        <a href="#cosmetology" class="hover:text-joy-red transition">Cosmetology</a>
+        <a href="#culinary" class="hover:text-joy-red transition">Culinary Arts</a>
+        <a href="#languages" class="hover:text-joy-red transition">Linguistics</a>
+        <a href="#leadership" class="hover:text-joy-red transition">Leadership</a>
     </div>
-    <a href="https://wa.me/254703312189" class="bg-joy-red text-white px-6 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 hover:bg-red-800 transition-all shadow-lg shadow-red-900/20"> <i class="fab fa-whatsapp"></i> Enroll Now </a> 
+    <a href="https://wa.me/254700813795" class="bg-joy-red text-white px-6 py-2.5 rounded-xl font-bold text-sm shadow-lg">Enroll Now</a> 
    </div> 
   </nav> 
 
@@ -140,218 +134,198 @@
     <div class="w-full lg:w-1/2 text-left animate__animated animate__fadeInLeft"> 
      <span class="inline-block px-4 py-1.5 bg-white/20 text-white rounded-full text-[10px] font-black tracking-widest uppercase mb-6">TVET Accredited Institute</span> 
      <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6"> Build a Career <br> You Love. </h1> 
-     <p class="text-red-100 text-lg mb-8 max-w-lg leading-relaxed"> Join Kenya's premier training center for professional skills in Cosmetology, Health Sciences, and International Languages. </p> 
-     <div class="flex gap-4"> 
-      <a href="#cosmetology" class="bg-white text-joy-red px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-gray-100 transition">Explore Courses</a> 
-      <a href="https://wa.me/254703312189" class="border-2 border-white/30 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition">Inquire Now</a>
-     </div> 
+     <p class="text-red-100 text-lg mb-8 max-w-lg leading-relaxed"> Master professional skills with Kenya's premier training center in Health Sciences, Cosmetology, and Culinary Arts. </p> 
     </div> 
 
     <div class="w-full lg:w-1/2 flex justify-center reveal-item"> 
      <div class="relative w-full max-w-[500px]"> 
       <div class="hero-blob" id="slideshow"> 
-       <img src="https://i.postimg.cc/05d8GMTx/4278530398183adf7aac72d3bbc7238a.jpg" class="slide active" alt="Makeup"> 
-       <img src="https://i.postimg.cc/J7BXRqHp/ceb2cb83b098ea4cb53512b1e02befcf.jpg" class="slide" alt="Nail Art"> 
-       <img src="https://i.postimg.cc/TPwyFq6M/7ac0a9eaaaafca68667a475558bb4d6d.jpg" class="slide" alt="Hair Tech"> 
-       <img src="https://i.postimg.cc/dtjL0Ssz/01a1d8cb292927efdd3066fd851acec0.jpg" class="slide" alt="Massage"> 
-      </div> 
-      <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-2xl z-10 border border-gray-100"> 
-       <p class="text-joy-red font-black text-3xl">100%</p> 
-       <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Placement Support</p> 
+       <img src="https://i.postimg.cc/05d8GMTx/4278530398183adf7aac72d3bbc7238a.jpg" class="slide active"> 
+       <img src="https://i.postimg.cc/TPwyFq6M/7ac0a9eaaaafca68667a475558bb4d6d.jpg" class="slide"> 
+       <img src="https://i.postimg.cc/Hk36VRQb/IMG-20260403-192510.png" class="slide"> 
+       <img src="https://i.postimg.cc/dtjL0Ssz/01a1d8cb292927efdd3066fd851acec0.jpg" class="slide"> 
       </div> 
      </div> 
     </div> 
    </div> 
-  </header> 
+  </header>
 
-  <section class="py-12 bg-gray-50 border-b border-gray-100">
-    <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div class="reveal-item">
-            <i class="fas fa-certificate text-joy-red text-2xl mb-2"></i>
-            <h4 class="font-bold text-joy-dark uppercase text-[10px] tracking-widest">TVET Accredited</h4>
-        </div>
-        <div class="reveal-item">
-            <i class="fas fa-map-marker-alt text-joy-red text-2xl mb-2"></i>
-            <h4 class="font-bold text-joy-dark uppercase text-[10px] tracking-widest">Nairobi CBD</h4>
-        </div>
-        <div class="reveal-item">
-            <i class="fas fa-users text-joy-red text-2xl mb-2"></i>
-            <h4 class="font-bold text-joy-dark uppercase text-[10px] tracking-widest">Expert Tutors</h4>
-        </div>
-        <div class="reveal-item">
-            <i class="fas fa-clock text-joy-red text-2xl mb-2"></i>
-            <h4 class="font-bold text-joy-dark uppercase text-[10px] tracking-widest">Flexible Timings</h4>
-        </div>
-    </div>
-  </section>
-
-  <section class="py-20 md:py-32 px-6 container mx-auto" id="cosmetology"> 
-   <div class="mb-16 reveal-item"> 
-    <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
-    <h2 class="text-4xl md:text-5xl font-extrabold text-joy-dark tracking-tight">School of Cosmetology</h2> 
-    <p class="text-gray-500 mt-4 max-w-xl">Master the art of beauty with hands-on practical sessions and industry-standard equipment.</p>
-   </div> 
-
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"> 
-    <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
-     <div class="image-frame"> 
-      <img src="https://i.postimg.cc/05d8GMTx/4278530398183adf7aac72d3bbc7238a.jpg" alt="Makeup"> 
-      <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[9px] font-bold text-joy-red uppercase">3 Months</div>
-     </div> 
-     <div class="p-6 pt-10 relative"> 
-      <div class="icon-floating"> <i class="fas fa-magic"></i> </div> 
-      <h3 class="text-lg font-bold mb-2">Beauty & Makeup</h3> 
-      <p class="text-gray-500 text-[11px] leading-relaxed mb-6">Bridal aesthetics, editorial looks, and skin tone correction.</p> 
-      <a href="https://wa.me/254703312189" class="block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-800 transition">Apply Now</a> 
-     </div> 
+  <section class="py-24 px-6 container mx-auto" id="health"> 
+    <div class="mb-16 reveal-item"> 
+        <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">School of Health Sciences</h2> 
     </div> 
-
-    <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
-     <div class="image-frame"> 
-      <img src="https://i.postimg.cc/2yF8VVD4/c07ac2af2650a59715e2ebe6e300f714.jpg" alt="Microblading"> 
-      <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[9px] font-bold text-joy-red uppercase">Intensive</div>
-     </div> 
-     <div class="p-6 pt-10 relative"> 
-      <div class="icon-floating"> <i class="fas fa-eye"></i> </div> 
-      <h3 class="text-lg font-bold mb-2">Microblading</h3> 
-      <p class="text-gray-500 text-[11px] leading-relaxed mb-6">Advanced semi-permanent brow technology and mapping.</p> 
-      <a href="https://wa.me/254703312189" class="block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-800 transition">Apply Now</a> 
-     </div> 
-    </div> 
-
-    <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
-     <div class="image-frame"> 
-      <img src="https://i.postimg.cc/dtjL0Ssz/01a1d8cb292927efdd3066fd851acec0.jpg" alt="Massage"> 
-      <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[9px] font-bold text-joy-red uppercase">2 Months</div>
-     </div> 
-     <div class="p-6 pt-10 relative"> 
-      <div class="icon-floating"> <i class="fas fa-spa"></i> </div> 
-      <h3 class="text-lg font-bold mb-2">Massage</h3> 
-      <p class="text-gray-500 text-[11px] leading-relaxed mb-6">Swedish, Deep Tissue, and Aromatherapy techniques.</p> 
-      <a href="https://wa.me/254703312189" class="block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-800 transition">Apply Now</a> 
-     </div> 
-    </div> 
-
-    <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
-     <div class="image-frame"> 
-      <img src="https://i.postimg.cc/TPwyFq6M/7ac0a9eaaaafca68667a475558bb4d6d.jpg" alt="Hair"> 
-      <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[9px] font-bold text-joy-red uppercase">6 Months</div>
-     </div> 
-     <div class="p-6 pt-10 relative"> 
-      <div class="icon-floating"> <i class="fas fa-cut"></i> </div> 
-      <h3 class="text-lg font-bold mb-2">Hair Tech</h3> 
-      <p class="text-gray-500 text-[11px] leading-relaxed mb-6">Expert braiding, dreadlocks, and chemical styling.</p> 
-      <a href="https://wa.me/254703312189" class="block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-800 transition">Apply Now</a> 
-     </div> 
-    </div> 
-
-    <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
-     <div class="image-frame"> 
-      <img src="https://i.postimg.cc/J7BXRqHp/ceb2cb83b098ea4cb53512b1e02befcf.jpg" alt="Nails"> 
-      <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[9px] font-bold text-joy-red uppercase">2 Months</div>
-     </div> 
-     <div class="p-6 pt-10 relative"> 
-      <div class="icon-floating"> <i class="fas fa-hand-sparkles"></i> </div> 
-      <h3 class="text-lg font-bold mb-2">Nail Tech</h3> 
-      <p class="text-gray-500 text-[11px] leading-relaxed mb-6">3D Nail art, gel application, and spa pedicures.</p> 
-      <a href="https://wa.me/254703312189" class="block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-800 transition">Apply Now</a> 
-     </div> 
-    </div> 
-   </div> 
-  </section> 
-
-  <section class="py-32 bg-[#0f172a] text-white px-6" id="health"> 
-   <div class="container mx-auto"> 
-    <h2 class="text-4xl md:text-6xl font-black mb-12"> Health <span class="text-joy-red">Sciences</span> </h2> 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> 
-      <div class="p-8 rounded-3xl bg-white/5 border border-white/10 reveal-item"> 
-       <div class="text-joy-red text-5xl mb-6"> <i class="fas fa-user-nurse"></i> </div> 
-       <h3 class="text-2xl font-bold mb-4">Nurse Assistant (CNA)</h3> 
-       <p class="text-gray-400 mb-8 leading-relaxed">Prepare for nursing support roles with certified clinical training and patient care ethics.</p> 
-       <a href="https://wa.me/254703312189" class="inline-block bg-joy-red text-white px-8 py-3 rounded-xl font-bold text-[10px] uppercase tracking-widest">Learn More</a> 
-      </div> 
-      <div class="p-8 rounded-3xl bg-white/5 border border-white/10 reveal-item"> 
-       <div class="text-joy-red text-5xl mb-6"> <i class="fas fa-laptop-medical"></i> </div> 
-       <h3 class="text-2xl font-bold mb-4">Medical Admin</h3> 
-       <p class="text-gray-400 mb-8 leading-relaxed">Combine IT and Healthcare. Learn records management and medical office administration.</p> 
-       <a href="https://wa.me/254703312189" class="inline-block bg-joy-red text-white px-8 py-3 rounded-xl font-bold text-[10px] uppercase tracking-widest">Learn More</a> 
-      </div> 
-    </div> 
-   </div> 
-  </section> 
-
-  <section class="py-24 px-6 container mx-auto" id="languages"> 
-   <div class="bg-gray-50 rounded-[4rem] p-12 md:p-20 flex flex-col md:flex-row items-center gap-16 reveal-item"> 
-    <div class="w-full md:w-1/2"> 
-     <h3 class="text-4xl font-black text-joy-dark mb-6">Global <span class="text-joy-red">Linguistics</span></h3> 
-     <p class="text-gray-500 text-lg mb-8 leading-relaxed">Study Abroad? We offer expert IELTS training and language certificate courses for global opportunities.</p> 
-     <div class="grid grid-cols-2 gap-4 mb-10 text-xs font-bold text-center"> 
-      <div class="bg-white p-4 rounded-xl border shadow-sm">ENGLISH (IELTS)</div> 
-      <div class="bg-white p-4 rounded-xl border shadow-sm">CHINESE (HSK)</div> 
-     </div> 
-     <button onclick="window.location.href='https://wa.me/254703312189'" class="bg-joy-dark text-white px-12 py-5 rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-xl">Start Your Journey</button> 
-    </div> 
-    <div class="w-full md:w-1/2"> 
-     <img src="https://i.postimg.cc/Fzsskhs8/happy-black-guy-student-studying-at-language-schoo-2022-01-05-02-36-53-utc-1024x683.jpg" class="rounded-[3rem] shadow-2xl border-8 border-white object-cover aspect-video" alt="Linguistics"> 
-    </div> 
-   </div> 
-  </section> 
-
-  <section class="py-24 px-6 bg-white" id="faq">
-    <div class="container mx-auto max-w-3xl">
-        <h2 class="text-3xl font-black text-joy-dark text-center mb-12">Common Questions</h2>
-        <div class="space-y-4">
-            <div class="faq-item p-6 cursor-pointer bg-gray-50 rounded-2xl transition-all" onclick="toggleFAQ(this)">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-bold text-joy-dark">Are your certificates TVET accredited?</h4>
-                    <i class="fas fa-chevron-down faq-icon transition-transform"></i>
-                </div>
-                <p class="faq-content text-gray-500 mt-4 text-sm">Yes, Joyworld Training Institute is fully accredited by TVET and we prepare students for national examinations and professional certifications.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="cosmetology-glass-card rounded-[2.5rem] p-10 reveal-item">
+            <h3 class="text-2xl font-black mb-4">Certified Nurse Assistant (CNA)</h3>
+            <p class="text-gray-500 text-sm mb-6">Comprehensive training covering Dementia Care, Elderly Care, Palliative Care, and Disability Support.</p>
+            <div class="flex flex-wrap gap-3 mt-auto">
+                <span class="bg-red-50 text-joy-red text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">KES 108,000</span>
+                <span class="bg-gray-100 text-gray-600 text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Admission: 5,000</span>
             </div>
-            <div class="faq-item p-6 cursor-pointer bg-gray-50 rounded-2xl transition-all" onclick="toggleFAQ(this)">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-bold text-joy-dark">Do you offer flexible payment plans?</h4>
-                    <i class="fas fa-chevron-down faq-icon transition-transform"></i>
-                </div>
-                <p class="faq-content text-gray-500 mt-4 text-sm">Yes, we allow fee payments in monthly installments to ensure quality education is accessible to everyone.</p>
-            </div>
-            <div class="faq-item p-6 cursor-pointer bg-gray-50 rounded-2xl transition-all" onclick="toggleFAQ(this)">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-bold text-joy-dark">Do you provide industrial attachment?</h4>
-                    <i class="fas fa-chevron-down faq-icon transition-transform"></i>
-                </div>
-                <p class="faq-content text-gray-500 mt-4 text-sm">We assist all our students in securing attachments in leading spas, salons, and healthcare facilities across Nairobi.</p>
+        </div>
+        <div class="cosmetology-glass-card rounded-[2.5rem] p-10 reveal-item">
+            <h3 class="text-2xl font-black mb-4">Medical Administration</h3>
+            <p class="text-gray-500 text-sm mb-6">Master hospital records, front office management, and healthcare support systems.</p>
+            <div class="flex flex-wrap gap-3 mt-auto">
+                <span class="bg-red-50 text-joy-red text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">TVET Accredited</span>
             </div>
         </div>
     </div>
   </section>
 
-  <footer class="bg-joy-dark text-gray-400 py-20 px-6" id="contact"> 
+  <section class="py-24 bg-gray-50 px-6" id="cosmetology"> 
+   <div class="container mx-auto">
+    <div class="mb-16 reveal-item"> 
+        <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">School of Cosmetology</h2> 
+    </div> 
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"> 
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/05d8GMTx/4278530398183adf7aac72d3bbc7238a.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-magic"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Beauty & Makeup</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Bridal, editorial, and professional skin correction.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/2yF8VVD4/c07ac2af2650a59715e2ebe6e300f714.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-eye"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Microblading</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Advanced brow mapping and shading techniques.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/dtjL0Ssz/01a1d8cb292927efdd3066fd851acec0.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-spa"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Massage</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Swedish, Deep Tissue, and Aromatherapy.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/TPwyFq6M/7ac0a9eaaaafca68667a475558bb4d6d.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-cut"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Hair Tech</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Braiding, dreadlocks, and professional styling.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/J7BXRqHp/ceb2cb83b098ea4cb53512b1e02befcf.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-hand-sparkles"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Nail Tech</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">3D Nail art, gel application, and spa care.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest">Apply Now</a> 
+            </div> 
+        </div> 
+    </div> 
+   </div>
+  </section> 
+
+  <section class="py-24 px-6 container mx-auto" id="culinary"> 
+    <div class="mb-16 reveal-item"> 
+        <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">Barista & Culinary Arts</h2> 
+    </div> 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="cosmetology-glass-card rounded-[2rem] p-8 reveal-item">
+            <h4 class="font-black text-xl mb-2">Barista (101, 102, 103)</h4>
+            <p class="text-xs text-gray-500 mb-6">Basic coffee, Espresso training, and Equipment care.</p>
+            <div class="text-joy-red font-black text-xs uppercase">KES 45,000</div>
+        </div>
+        <div class="cosmetology-glass-card rounded-[2rem] p-8 reveal-item">
+            <h4 class="font-black text-xl mb-2">Mixology</h4>
+            <p class="text-xs text-gray-500 mb-6">Professional cocktail and drink creation.</p>
+            <div class="text-joy-red font-black text-xs uppercase">KES 40,000</div>
+        </div>
+        <div class="cosmetology-glass-card rounded-[2rem] p-8 reveal-item">
+            <h4 class="font-black text-xl mb-2">Cakes & Pastry</h4>
+            <p class="text-xs text-gray-500 mb-6">Master Class, Baking, Pastry, and Cookery.</p>
+            <div class="text-joy-red font-black text-xs uppercase">From KES 42,000</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-900 text-white px-6"> 
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-3xl font-black uppercase mb-8">School of Linguistics</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <p class="font-bold text-joy-red mb-1">German (A1-B2)</p>
+                    <p class="text-[10px] text-gray-400">Goethe Exam Preparation</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <p class="font-bold text-joy-red mb-1">Chinese (HSK 1-3)</p>
+                    <p class="text-[10px] text-gray-400">HSK Proficiency Testing</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <p class="font-bold text-joy-red mb-1">English / Kiswahili</p>
+                    <p class="text-[10px] text-gray-400">Foundation & Intermediate</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <p class="font-bold text-joy-red mb-1">Other Languages</p>
+                    <p class="text-[10px] text-gray-400">French and Arabic</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-3xl font-black uppercase mb-8">Leadership Academy</h2>
+            <div class="space-y-4">
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl flex justify-between items-center">
+                    <span class="font-bold">Public Speaking</span>
+                    <span class="text-joy-red font-black text-xs">KES 25,000</span>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl flex justify-between items-center">
+                    <span class="font-bold">Motivational Speaking</span>
+                    <span class="text-joy-red font-black text-xs">KES 20,000</span>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                    <span class="font-bold">Emotional Intelligence & Leadership</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#111828] text-white py-20 px-6"> 
    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-16"> 
     <div> 
-     <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 opacity-60 grayscale mb-8" alt="Logo"> 
-     <p class="text-[10px] uppercase tracking-widest font-black text-gray-600">Empowering Professionals</p> 
+     <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-12 bg-white p-2 rounded-xl mb-8"> 
+     <p class="text-gray-400 text-xs leading-relaxed">Joyworld Training Institute: TVET Accredited Center of Excellence. Training with Integrity.</p> 
     </div> 
-    <div class="text-left"> 
-        <h4 class="text-white font-bold mb-4 uppercase text-xs">Contact Us</h4>
-        <p class="text-sm">Koinange Street, Nairobi CBD</p> 
-        <p class="text-sm mt-2 font-bold text-white">+254 703 312 189</p>
+    <div> 
+     <h4 class="font-black uppercase tracking-widest mb-8 text-red-500 text-[10px]">Location</h4> 
+     <p class="text-gray-300 text-sm font-medium leading-loose"> <i class="fas fa-map-marker-alt text-red-500 mr-3"></i> Koinange Street, Nairobi</p> 
     </div> 
-    <div class="flex gap-6 text-2xl md:justify-end"> 
-        <a href="#" class="hover:text-joy-red"><i class="fab fa-facebook"></i></a> 
-        <a href="#" class="hover:text-joy-red"><i class="fab fa-instagram"></i></a> 
-        <a href="https://wa.me/254703312189" class="hover:text-joy-red"><i class="fab fa-whatsapp"></i></a> 
+    <div class="flex flex-col md:items-end gap-4"> 
+     <h4 class="font-black uppercase tracking-widest text-red-500 text-[10px]">Contact</h4> 
+     <p class="text-gray-300 text-sm"><i class="fas fa-phone-alt text-red-500 mr-3"></i> +254 700 813 795</p> 
+     <div class="flex gap-4 text-xl mt-4">
+        <a href="#"><i class="fab fa-facebook-f text-gray-500 hover:text-white transition"></i></a> 
+        <a href="#"><i class="fab fa-instagram text-gray-500 hover:text-white transition"></i></a> 
+        <a href="https://wa.me/254700813795"><i class="fab fa-whatsapp text-gray-500 hover:text-white transition"></i></a> 
+     </div>
     </div> 
    </div> 
   </footer> 
 
   <script>
-        // Reveal Animations
-        ScrollReveal().reveal('.reveal-item', { 
-            distance: '30px', origin: 'bottom', duration: 1000, interval: 100, easing: 'cubic-bezier(0.5, 0, 0, 1)' 
-        });
+        ScrollReveal().reveal('.reveal-item', { distance: '40px', origin: 'bottom', duration: 1000, interval: 100 });
 
-        // Slideshow
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
         setInterval(() => {
@@ -359,11 +333,7 @@
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add('active');
         }, 3000);
-
-        // FAQ Toggle
-        function toggleFAQ(element) {
-            element.classList.toggle('active');
-        }
     </script> 
  </body>
+</html>
 
