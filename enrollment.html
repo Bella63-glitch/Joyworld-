@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Enroll Now | Joyworld Training Institute</title> 
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+  <script src="https://unpkg.com/scrollreveal"></script> 
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #1e293b; }
+        
+        /* White Header */
+        .joy-header { background: #ffffff; border-bottom: 1px solid #e2e8f0; }
+        
+        /* Deep Navy Footer */
+        .joy-footer { background: #0F172A; }
+        
+        .input-field { 
+            width: 100%; padding: 14px; border-radius: 12px; border: 2px solid #f1f5f9;
+            background: #f8fafc; outline: none; transition: 0.3s;
+        }
+        .input-field:focus { border-color: #b91c1c; background: #fff; box-shadow: 0 0 0 4px rgba(185, 28, 28, 0.05); }
+
+        .enroll-card {
+            background: #ffffff;
+            border-radius: 2.5rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+            border: 1px solid #f1f5f9;
+        }
+
+        .mpesa-box {
+            background: #f0fdf4;
+            border: 2px dashed #22c55e;
+            border-radius: 1.5rem;
+        }
+
+        .joy-red-btn { background: #b91c1c; transition: all 0.3s ease; }
+        .joy-red-btn:hover { background: #991b1b; transform: translateY(-2px); }
+    </style> 
+ </head> 
+ <body> 
+  <header class="joy-header py-4 sticky top-0 z-50"> 
+   <div class="container mx-auto px-6 flex justify-between items-center"> 
+    <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-14" alt="Joyworld Logo"> 
+    <div class="hidden md:block text-right"> 
+     <p class="text-[10px] font-black uppercase text-gray-400 tracking-widest">Questions? Call us</p> 
+     <p class="text-lg font-black text-red-600">+254 700 813 795</p> 
+    </div> 
+   </div> 
+  </header> 
+  <main class="container mx-auto px-6 py-16 max-w-6xl"> 
+   <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start"> 
+    <div class="lg:col-span-7 reveal-left"> <span class="bg-red-50 text-red-700 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Enrollment Portal 2026</span> 
+     <h1 class="text-5xl font-black text-gray-900 mt-4 mb-2 tracking-tighter">Start Your Journey</h1> 
+     <p class="text-gray-500 font-medium mb-12">Fill in your information accurately to process your admission.</p> 
+     <form class="space-y-8"> 
+      <div class="space-y-4"> 
+       <h3 class="text-sm font-black uppercase text-red-600 tracking-widest flex items-center gap-2"> <i class="fas fa-user-circle"></i> Personal Details </h3> 
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> 
+        <input type="text" id="studentName" placeholder="Full Legal Name" class="input-field"> 
+        <input type="text" id="idNum" placeholder="ID / Passport Number" class="input-field"> 
+       </div> 
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> 
+        <input type="tel" id="whatsapp" placeholder="WhatsApp Number" class="input-field"> <select id="eduLevel" class="input-field text-gray-500"> <option value="">Education Level</option> <option>KCSE Certificate</option> <option>KCPE Certificate</option> <option>Diploma / Degree</option> </select> 
+       </div> 
+      </div> 
+      <div class="space-y-4 pt-4"> 
+       <h3 class="text-sm font-black uppercase text-red-600 tracking-widest flex items-center gap-2"> <i class="fas fa-graduation-cap"></i> Course &amp; Intake </h3> 
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> <select id="course" class="input-field text-gray-500"> <option value="">Select Program</option> <option>Makeup Artistry</option> <option>Microblading &amp; Shading</option> <option>Massage Therapy</option> <option>Nail Technology</option> <option>Hair Tech &amp; Braiding</option> <option>Nursing / CNA</option> <option>German (Ausbildung)</option> </select> <select id="intake" class="input-field text-gray-500"> <option>January 2025 Intake</option> <option>May 2025 Intake</option> <option>September 2025 Intake</option> </select> 
+       </div> 
+      </div> 
+     </form> 
+    </div> 
+    <div class="lg:col-span-5 reveal-right"> 
+     <div class="enroll-card p-10"> 
+      <div class="flex justify-between items-center mb-10"> 
+       <h2 class="text-2xl font-black text-gray-900 uppercase tracking-tighter">Registration</h2> 
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/512px-M-PESA_LOGO-01.svg.png" class="h-6"> 
+      </div> 
+      <div class="space-y-4 mb-10"> 
+       <div class="flex justify-between font-bold text-gray-400 text-sm"> <span>Admission Fee</span> <span>Ksh 2,000</span> 
+       </div> 
+       <div class="flex justify-between font-bold text-gray-400 text-sm"> <span>Course Deposit</span> <span>Ksh 5,000</span> 
+       </div> 
+       <div class="flex justify-between pt-6 border-t-2 border-gray-100"> <span class="text-xl font-black text-gray-900">TOTAL DUE</span> <span class="text-3xl font-black text-red-600 tracking-tighter">Ksh 7,000</span> 
+       </div> 
+      </div> 
+      <div class="mpesa-box p-6 mb-10"> 
+       <p class="text-[10px] font-black text-green-700 uppercase mb-3 tracking-widest">Lipa na M-Pesa Instructions</p> 
+       <div class="text-sm font-bold text-gray-700 space-y-2"> 
+        <p>1. Buy Goods &amp; Services</p> 
+        <p>2. Till Number: <span class="text-red-600 text-xl font-black">XXXXXX</span></p> 
+        <p>3. Amount: <span class="text-gray-900">7,000</span></p> 
+       </div> 
+      </div> <button onclick="sendEnrollment()" class="w-full joy-red-btn text-white py-5 rounded-2xl font-black text-lg shadow-2xl flex items-center justify-center gap-3"> <i class="fab fa-whatsapp text-2xl"></i> PROCEED TO WHATSAPP </button> 
+      <p class="text-[10px] text-center mt-8 text-gray-400 font-bold uppercase tracking-widest leading-relaxed italic"> Submit form and attach your M-Pesa screenshot </p> 
+     </div> 
+    </div> 
+   </div> 
+  </main> 
+  <footer class="joy-footer text-white py-20 px-6"> 
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-16"> 
+    <div> 
+     <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-14 bg-white p-2 rounded-xl mb-8" alt="Logo"> 
+     <p class="text-gray-400 text-sm leading-relaxed">Joyworld Training Institute is a TVET accredited center of excellence, transforming students into globally competitive professionals.</p> 
+    </div> 
+    <div> 
+     <h4 class="font-black uppercase tracking-[0.3em] mb-8 text-red-500 text-xs">Our Campus</h4> 
+     <p class="text-gray-300 text-sm font-medium leading-loose"> <i class="fas fa-map-marker-alt text-red-500 mr-3"></i> Koinange Street,<br> <span class="ml-7">Opposite CJ Restaurant,</span><br> <span class="ml-7">Nairobi, Kenya.</span> </p> 
+    </div> 
+    <div> 
+     <h4 class="font-black uppercase tracking-[0.3em] mb-8 text-red-500 text-xs">Support Center</h4> 
+     <p class="text-gray-300 text-sm mb-4"><i class="fas fa-phone-alt text-red-500 mr-3"></i> +254 700 813 795</p> 
+     <p class="text-gray-300 text-sm"><i class="fas fa-envelope text-red-500 mr-3"></i> info@joyworldinstitute.ac.ke</p> 
+    </div> 
+   </div> 
+   <div class="container mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"> 
+    <p class="text-[10px] font-bold uppercase tracking-[0.5em] text-gray-600">© 2026 Joyworld Training Institute</p> 
+    <div class="flex gap-6 text-gray-500"> <i class="fab fa-facebook-f hover:text-white transition cursor-pointer"></i> <i class="fab fa-instagram hover:text-white transition cursor-pointer"></i> <i class="fab fa-whatsapp hover:text-white transition cursor-pointer"></i> 
+    </div> 
+   </div> 
+  </footer> 
+  <script>
+        function sendEnrollment() {
+            const name = document.getElementById('studentName').value;
+            const id = document.getElementById('idNum').value;
+            const phone = document.getElementById('whatsapp').value;
+            const course = document.getElementById('course').value;
+            const edu = document.getElementById('eduLevel').value;
+            const intake = document.getElementById('intake').value;
+
+            if (!name || !phone || !course) {
+                alert("Please fill in the required fields (Name, Phone, and Course)!");
+                return;
+            }
+
+            const text = `*NEW ENROLLMENT - JOYWORLD*%0A` +
+                         `----------------------------%0A` +
+                         `*Name:* ${name}%0A` +
+                         `*ID:* ${id}%0A` +
+                         `*Phone:* ${phone}%0A` +
+                         `*Edu Level:* ${edu}%0A` +
+                         `*Course:* ${course}%0A` +
+                         `*Intake:* ${intake}%0A` +
+                         `----------------------------%0A` +
+                         `*I have paid the 7,000 deposit. Sending screenshot...*`;
+
+            window.open(`https://wa.me/254700813795?text=${text}`, '_blank');
+        }
+
+        ScrollReveal().reveal('.reveal-left', { distance: '40px', origin: 'left', duration: 1000 });
+        ScrollReveal().reveal('.reveal-right', { distance: '40px', origin: 'right', duration: 1000 });
+    </script> 
+ </body>
+  </html>
