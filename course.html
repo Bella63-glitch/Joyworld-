@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Course Catalog | Joyworld Training Institute</title> 
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+  <script src="https://unpkg.com/scrollreveal"></script> 
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #ffffff;
+            color: #111827; 
+            overflow-x: hidden;
+        }
+        
+        .text-joy-red { color: #b91c1c; }
+        .bg-joy-red { background-color: #b91c1c; }
+        .bg-joy-dark { background-color: #0f172a; }
+
+        /* RECTANGULAR HERO SECTION */
+        .hero-section {
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            position: relative;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        /* FLOATING ANIMATIONS */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes float-delayed {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-delayed { animation: float-delayed 5s ease-in-out infinite; }
+
+        .image-stack-container {
+            position: relative;
+            width: 100%;
+            height: 380px;
+        }
+
+        .main-hero-img {
+            width: 85%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .accent-hero-img {
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+            width: 45%;
+            height: 60%;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 6px solid #0f172a;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* CARD & SECTION ANIMATIONS */
+        .image-frame {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cosmetology-glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(185, 28, 28, 0.1);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .cosmetology-glass-card:hover {
+            transform: translateY(-10px);
+            background: white;
+            box-shadow: 0 30px 60px -12px rgba(185, 28, 28, 0.15);
+            border-color: #b91c1c;
+        }
+        .cosmetology-glass-card:hover .image-frame img { transform: scale(1.1); }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+    </style> 
+ </head> 
+ <body> <a href="https://wa.me/254700813795" class="whatsapp-float animate__animated animate__bounceInUp" target="_blank"> <i class="fab fa-whatsapp"></i> </a> 
+  <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 px-6 py-4 border-b border-gray-100"> 
+   <div class="container mx-auto flex justify-between items-center"> <a href="#"><img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-10 md:h-12" alt="Joyworld Logo"></a> 
+    <div class="hidden lg:flex items-center gap-8 font-bold text-sm text-gray-700"> <a href="#health" class="hover:text-joy-red transition">Health Sciences</a> <a href="#cosmetology" class="hover:text-joy-red transition">Cosmetology</a> <a href="#culinary" class="hover:text-joy-red transition">Culinary Arts</a> <a href="#languages" class="hover:text-joy-red transition">Linguistics</a> <a href="#leadership" class="hover:text-joy-red transition">Leadership</a> 
+    </div> 
+    <div class="flex items-center gap-4"> <a href="https://wa.me/254700813795" class="bg-joy-red text-white px-6 py-2.5 rounded-xl font-bold text-sm shadow-lg hover:bg-red-700 transition">Enroll Now</a> 
+    </div> 
+   </div> 
+  </nav> 
+  <header class="hero-section px-6 overflow-hidden"> 
+   <div class="hero-pattern"></div> 
+   <div class="container mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10"> 
+    <div class="w-full lg:w-3/5 text-left animate__animated animate__fadeInLeft"> 
+     <div class="flex items-center gap-3 mb-4"> <span class="w-8 h-[2px] bg-joy-red"></span> <span class="text-joy-red font-black text-xs uppercase tracking-[0.3em]">Excellence in Vocational Training</span> 
+     </div> 
+     <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6"> Professional Skills <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">For a Global Career.</span> </h1> 
+     <p class="text-slate-300 text-base md:text-lg mb-8 max-w-xl leading-relaxed"> Join Kenya's leading TVET accredited institute. We provide industry-standard training to empower the next generation of professionals. </p> 
+     <div class="flex flex-wrap gap-4"> <a href="#health" class="bg-joy-red text-white px-8 py-4 rounded-2xl font-extrabold hover:bg-red-700 transition shadow-xl flex items-center gap-3 animate__animated animate__pulse animate__infinite"> Explore Courses <i class="fas fa-arrow-right"></i> </a> 
+     </div> 
+    </div> 
+    <div class="w-full lg:w-2/5 mt-10 lg:mt-0"> 
+     <div class="image-stack-container"> 
+      <img src="https://i.postimg.cc/m22rXq6K/IMG-20260405-155740.png" class="main-hero-img animate-float" alt="Training"> 
+      <img src="https://i.postimg.cc/vmvLsCbx/IMG-20260405-155012.jpg" class="accent-hero-img animate-float-delayed" alt="Students"> 
+     </div> 
+    </div> 
+   </div> 
+  </header> 
+ 
+<section class="py-24 px-6 container mx-auto" id="health"> 
+    <div class="mb-16 reveal-item"> 
+        <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">School of Health Sciences</h2> 
+    </div> 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="cosmetology-glass-card rounded-[2.5rem] p-10 reveal-item">
+            <h3 class="text-2xl font-black mb-4">Certified Nurse Assistant (CNA)</h3>
+            <p class="text-gray-500 text-sm mb-6">Comprehensive training covering Dementia Care, Elderly Care, Palliative Care, and Disability Support.</p>
+            <div class="flex flex-wrap gap-3 mt-auto">
+                <span class="bg-red-50 text-joy-red text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">KES 108,000</span>
+                <span class="bg-gray-100 text-gray-600 text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">Admission: 5,000</span>
+            </div>
+        </div>
+        <div class="cosmetology-glass-card rounded-[2.5rem] p-10 reveal-item">
+            <h3 class="text-2xl font-black mb-4">Medical Administration</h3>
+            <p class="text-gray-500 text-sm mb-6">Master hospital records, front office management, and healthcare support systems.</p>
+            <div class="flex flex-wrap gap-3 mt-auto">
+                <span class="bg-red-50 text-joy-red text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest">TVET Accredited</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50 px-6" id="cosmetology"> 
+   <div class="container mx-auto">
+    <div class="mb-16 reveal-item"> 
+        <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">School of Cosmetology</h2> 
+    </div> 
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"> 
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/05d8GMTx/4278530398183adf7aac72d3bbc7238a.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-magic"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Beauty &amp; Makeup</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Bridal, editorial, and professional skin correction.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-700 transition">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/2yF8VVD4/c07ac2af2650a59715e2ebe6e300f714.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-eye"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Microblading</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Advanced brow mapping and shading techniques.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-700 transition">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/dtjL0Ssz/01a1d8cb292927efdd3066fd851acec0.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-spa"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Massage</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Swedish, Deep Tissue, and Aromatherapy.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-700 transition">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/TPwyFq6M/7ac0a9eaaaafca68667a475558bb4d6d.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-cut"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Hair Tech</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">Braiding, dreadlocks, and professional styling.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-700 transition">Apply Now</a> 
+            </div> 
+        </div> 
+
+        <div class="cosmetology-glass-card rounded-[2rem] overflow-hidden reveal-item"> 
+            <div class="image-frame"><img src="https://i.postimg.cc/J7BXRqHp/ceb2cb83b098ea4cb53512b1e02befcf.jpg"></div> 
+            <div class="p-6 pt-10 relative flex flex-col h-full"> 
+                <div class="icon-floating"><i class="fas fa-hand-sparkles"></i></div> 
+                <h3 class="text-lg font-bold mb-2">Nail Tech</h3> 
+                <p class="text-gray-500 text-[11px] mb-6">3D Nail art, gel application, and spa care.</p> 
+                <a href="https://wa.me/254700813795" class="mt-auto block w-full py-3 bg-joy-red text-white text-center rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-red-700 transition">Apply Now</a> 
+            </div> 
+        </div> 
+    </div> 
+   </div>
+  </section> 
+
+  <section class="py-24 px-6 container mx-auto" id="culinary"> 
+    <div class="mb-16 reveal-item"> 
+        <div class="h-1.5 w-12 bg-joy-red mb-4 rounded-full"></div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">Barista &amp; Culinary Arts</h2> 
+    </div> 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="cosmetology-glass-card rounded-[2rem] p-8 reveal-item">
+            <h4 class="font-black text-xl mb-2">Barista (101, 102, 103)</h4>
+            <p class="text-xs text-gray-500 mb-6">Basic coffee, Espresso training, and Equipment care.</p>
+            <div class="text-joy-red font-black text-xs uppercase">KES 45,000</div>
+        </div>
+        <div class="cosmetology-glass-card rounded-[2rem] p-8 reveal-item">
+            <h4 class="font-black text-xl mb-2">Mixology</h4>
+            <p class="text-xs text-gray-500 mb-6">Professional cocktail and drink creation.</p>
+            <div class="text-joy-red font-black text-xs uppercase">KES 40,000</div>
+        </div>
+        <div class="cosmetology-glass-card rounded-[2rem] p-8 reveal-item">
+            <h4 class="font-black text-xl mb-2">Cakes &amp; Pastry</h4>
+            <p class="text-xs text-gray-500 mb-6">Master Class, Baking, Pastry, and Cookery.</p>
+            <div class="text-joy-red font-black text-xs uppercase">From KES 42,000</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-joy-dark text-white px-6 overflow-hidden"> 
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="reveal-left">
+            <h2 class="text-3xl font-black uppercase mb-8">School of Linguistics</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition group">
+                    <p class="font-bold text-joy-red mb-1 group-hover:text-red-400 transition">German (A1-B2)</p>
+                    <p class="text-[10px] text-gray-400">Goethe Exam Preparation</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition group">
+                    <p class="font-bold text-joy-red mb-1 group-hover:text-red-400 transition">Chinese (HSK 1-3)</p>
+                    <p class="text-[10px] text-gray-400">HSK Proficiency Testing</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition group">
+                    <p class="font-bold text-joy-red mb-1 group-hover:text-red-400 transition">English / Kiswahili</p>
+                    <p class="text-[10px] text-gray-400">Foundation &amp; Intermediate</p>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition group">
+                    <p class="font-bold text-joy-red mb-1 group-hover:text-red-400 transition">Other Languages</p>
+                    <p class="text-[10px] text-gray-400">French and Arabic</p>
+                </div>
+            </div>
+        </div>
+        <div class="reveal-right">
+            <h2 class="text-3xl font-black uppercase mb-8">Leadership Academy</h2>
+            <div class="space-y-4">
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl flex justify-between items-center hover:bg-white/10 transition">
+                    <span class="font-bold">Public Speaking</span>
+                    <span class="text-joy-red font-black text-xs">KES 25,000</span>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl flex justify-between items-center hover:bg-white/10 transition">
+                    <span class="font-bold">Motivational Speaking</span>
+                    <span class="text-joy-red font-black text-xs">KES 20,000</span>
+                </div>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition">
+                    <span class="font-bold">Emotional Intelligence &amp; Leadership</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="bg-joy-dark text-white py-20 px-6 border-t border-white/10"> 
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-16"> 
+    <div class="reveal-item"> 
+     <img src="https://i.postimg.cc/SxMTMHRg/ei-1775130238504-removebg-preview.png" class="h-12 bg-white p-2 rounded-xl mb-8"> 
+     <p class="text-gray-400 text-xs leading-relaxed">Joyworld Training Institute: TVET Accredited Center of Excellence. Training with Integrity.</p> 
+    </div> 
+    <div class="reveal-item"> 
+     <h4 class="font-black uppercase tracking-widest mb-8 text-red-500 text-[10px]">Location</h4> 
+     <p class="text-gray-300 text-sm font-medium leading-loose"> <i class="fas fa-map-marker-alt text-red-500 mr-3"></i> Koinange Street, Nairobi</p> 
+    </div> 
+    <div class="flex flex-col md:items-end gap-4 reveal-item"> 
+     <h4 class="font-black uppercase tracking-widest text-red-500 text-[10px]">Contact</h4> 
+     <p class="text-gray-300 text-sm"><i class="fas fa-phone-alt text-red-500 mr-3"></i> +254 700 813 795</p> 
+     <div class="flex gap-4 text-xl mt-4">
+        <a href="#"><i class="fab fa-facebook-f text-gray-500 hover:text-white transition"></i></a> 
+        <a href="#"><i class="fab fa-instagram text-gray-500 hover:text-white transition"></i></a> 
+        <a href="https://wa.me/254700813795"><i class="fab fa-whatsapp text-gray-500 hover:text-white transition"></i></a> 
+     </div>
+    </div> 
+   </div> 
+  </footer> 
+
+  <script>
+        // Initialize ScrollReveal
+        const sr = ScrollReveal({
+            distance: '60px',
+            duration: 1200,
+            delay: 200,
+            reset: false // Animations happen once per load
+        });
+
+        sr.reveal('.reveal-item', { origin: 'bottom', interval: 150 });
+        sr.reveal('.reveal-left', { origin: 'left' });
+        sr.reveal('.reveal-right', { origin: 'right' });
+  </script> 
+ 
+</body></html>
+  
